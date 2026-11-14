@@ -1,5 +1,5 @@
 const ALLOWED_ORIGIN = "https://nova-ai-platform-d0z.pages.dev";
-const MODEL = "llama-3.3-70b-versatile";
+const MODEL = "openai/gpt-oss-20b";
 
 function json(data, status = 200, origin = ALLOWED_ORIGIN) {
   return new Response(JSON.stringify(data), {
