@@ -36,7 +36,8 @@
       <section class="welcome" aria-labelledby="welcome-title">
         <div class="eyebrow"><span class="sparkle">✧</span> A LITTLE MORE POSSIBLE</div>
         <h1 id="welcome-title">Your ideas,<br><span>amplified.</span></h1>
-        <p class="intro">A clear space to think, create, learn and figure things out.<br class="desktop-break"> What would you like to explore today?</p>
+        <p class="intro" id="intro-copy">A clear space to think, create, learn and figure things out.<br class="desktop-break"> What would you like to explore today?</p>
+        <div class="chat-thread" id="chat-thread" aria-live="polite"></div>
 
         <div class="prompt-grid">
           <button class="prompt-card" data-prompt="Help me understand a difficult topic in a simple way."><span class="prompt-icon lavender">✳</span><strong>Learn something</strong><small>Make complex ideas simple</small><span class="card-arrow">↗</span></button>
@@ -49,7 +50,7 @@
           <textarea id="prompt-input" rows="1" placeholder="Message nova.ai..." aria-label="Message nova.ai"></textarea>
           <div class="composer-footer"><span class="composer-hint">Ask anything — your next idea starts here.</span><button class="send-button" type="submit" aria-label="Send message">↑</button></div>
         </form>
-        <p class="disclaimer" id="status-note">Preview interface · AI responses and accounts will be connected in the next phases.</p>
+        <p class="disclaimer" id="status-note">AI can make mistakes. Check important information.</p>
       </section>
     </main>
   </div>
