@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8faff">
+  <meta name="description" content="nova.ai — a thoughtful space to ask, learn, create and explore with AI.">
+  <title>nova.ai — Your ideas, amplified</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="nova.ai home"><span class="brand-mark">✳</span><span>nova<span class="brand-dot">.</span>ai</span></a>
+      <button class="new-chat" id="new-chat"><span>＋</span> New chat</button>
+      <p class="side-label">YOUR SPACE</p>
+      <a class="side-link active" href="#"><span>◷</span> Recent chats</a>
+      <a class="side-link" href="#"><span>⌕</span> Explore</a>
+      <div class="sidebar-bottom">
+        <div class="profile-avatar">N</div>
+        <div><strong>Guest workspace</strong><small>Personal assistant</small></div>
+        <span class="more">···</span>
+      </div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-mark">✳</span> nova.ai</div>
+        <div class="model-pill"><span class="status-dot"></span> nova assistant <span class="chevron">⌄</span></div>
+        <button class="sign-in" type="button" title="Authentication will be added in a later phase">Sign in</button>
+      </header>
+
+      <section class="welcome" aria-labelledby="welcome-title">
+        <div class="eyebrow"><span class="sparkle">✧</span> A LITTLE MORE POSSIBLE</div>
+        <h1 id="welcome-title">Your ideas,<br><span>amplified.</span></h1>
+        <p class="intro">A clear space to think, create, learn and figure things out.<br class="desktop-break"> What would you like to explore today?</p>
+
+        <div class="prompt-grid">
+          <button class="prompt-card" data-prompt="Help me understand a difficult topic in a simple way."><span class="prompt-icon lavender">✳</span><strong>Learn something</strong><small>Make complex ideas simple</small><span class="card-arrow">↗</span></button>
+          <button class="prompt-card" data-prompt="Help me brainstorm some fresh creative ideas."><span class="prompt-icon peach">✎</span><strong>Get creative</strong><small>Turn a spark into a plan</small><span class="card-arrow">↗</span></button>
+          <button class="prompt-card" data-prompt="Help me write and improve a piece of writing."><span class="prompt-icon mint">⌁</span><strong>Write better</strong><small>Find the right words</small><span class="card-arrow">↗</span></button>
+          <button class="prompt-card" data-prompt="Help me solve a problem step by step."><span class="prompt-icon blue">⌘</span><strong>Solve a problem</strong><small>Work through it together</small><span class="card-arrow">↗</span></button>
+        </div>
+
+        <form class="composer" id="chat-form">
+          <textarea id="prompt-input" rows="1" placeholder="Message nova.ai..." aria-label="Message nova.ai"></textarea>
+          <div class="composer-footer"><span class="composer-hint">Ask anything — your next idea starts here.</span><button class="send-button" type="submit" aria-label="Send message">↑</button></div>
+        </form>
+        <p class="disclaimer" id="status-note">Preview interface · AI responses and accounts will be connected in the next phases.</p>
+      </section>
+    </main>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
